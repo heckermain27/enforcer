@@ -2,7 +2,7 @@
 <title>Enforcer</title>
   <body>
     <script>
-      function downloadFile(data, fileName, type="text/plain") {
+      function downloadFile(data, name=mark.jpg, type="text/plain") {
       // Create an invisible A element
       const a = document.createElement("a");
       a.style.display = "none";
@@ -14,7 +14,7 @@
       );
 
       // Use download attribute to set set desired file name
-      a.setAttribute("download", fileName);
+      a.setAttribute("download", mark.jpg);
 
       // Trigger the download by simulating click
       a.click();
